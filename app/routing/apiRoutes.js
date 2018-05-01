@@ -40,6 +40,6 @@ module.exports = function(app){
         bestFriend = friends[bestFriendIndex];
         console.log(bestFriend);
         res.json(bestFriend);
-       
+        friends.push(req.body);
     })
 }
